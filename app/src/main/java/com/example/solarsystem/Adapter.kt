@@ -11,11 +11,11 @@ class Adapter(private var planet:List<PlanetData>): RecyclerView.Adapter<Adapter
 
 
     class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        var title = view.title
-        var planetimg = view.planet_img
-        var galaxy = view.galaxy
-        var distance = view.distance
-        var gravity = view.gravity
+        var title = view.title!!
+        var planetimg = view.planet_img!!
+        var galaxy = view.galaxy!!
+        var distance = view.distance!!
+        var gravity = view.gravity!!
 
     }
 

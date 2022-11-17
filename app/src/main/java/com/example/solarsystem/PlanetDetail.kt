@@ -22,14 +22,14 @@ class PlanetDetail : AppCompatActivity() {
         setData(obj, planetImg!!)
 
         button_info.setOnClickListener{
-            val intent=Intent(this,FinalActivity::class.java)
+            val intent=Intent(this,finalActivity::class.java)
             startActivity(intent)
         }
     }
     private fun setData(obj:PlanetData,planetImg:Int){
         title_info.text=obj.title
-        distance_info.text=obj.distance+"m km"
-        gravity_info.text=obj.gravity+" m/ss"
+        distance_info.text=obj.distance
+        gravity_info.text=obj.gravity
         overview_info.text=obj.overView
         galaxy_info.text
         obj.galaxy
